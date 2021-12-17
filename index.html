@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="main-header">
+            <span>The Code Review</span>
+        </div>
+        <div class="heading">
+            <p class="title">Signup for our newsletter</p>
+            <p class="summary">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="row">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user-name" placeholder="Required">
+                </div>
+                <div class="row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="user-email" placeholder="Required">
+                </div>
+                <div class="row">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user-phone">
+                </div>
+                <div class="row">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user-address">
+                </div>
+                <div class="row">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user-city">
+                </div>
+                <div class="row">
+                    <label for="state">State</label>
+                    <select id="state" name="user-state" disabled>
+                        <option value="" disabled selected>Choose State</option>
+                        <option value="florida">Florida</option>
+                        <option value="florida">New York</option>
+                        <option value="florida">New Jersy</option>
+                        <option value="florida">Pennsylvania</option>
+                        <option value="florida">Virginia</option>
+                    </select>
+                </div>
+                <div class="row-alt">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user-zip">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Newsletter</legend>
+
+                <p class="newsletter-summary">Select the newsletters you would like to receive</p>
+                <input type="checkbox" id="html" value="html_news" name="news_type">
+                <label for="html">HTML News</label><br>
+                <input type="checkbox" id="css" value="css_news" name="news_type">
+                <label for="css">CSS News</label><br>
+                <input type="checkbox" id="javascript" value="javascript_news" name="news_type">
+                <label for="javascript">Javascript News</label><br>
+
+                <p class="newsletter-format">Newsletter format</p>
+                <input type="radio" id="html-web" value="html_format" name="news_format">
+                <label for="html-web">HTML</label><br>
+                <input type="radio" id="plain-text" value="plain_text_format" name="news_format">
+                <label for="plain-text">Plain text</label><br>
+
+                <label for="other-topics" class="topics">Other topics you'd like to hear about</label>
+                <textarea id="other-topics" name="user-other-topics"></textarea>
+
+                <button type="submit">Sign Up</button>
+
+                <p class="copyright">Copyright The Code Review</p>
+
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>
